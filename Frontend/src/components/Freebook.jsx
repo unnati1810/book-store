@@ -3,12 +3,10 @@ import list from "../../public/list.json"
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 import Slider from "react-slick";
+import Cards from "../components/Cards"
 
 function Freebook() {
-
     const filterData=list.filter((data)=>data.category==="Free")
-    console.log(filterData)
-
     var settings = {
         dots: true,
         infinite: false,
@@ -51,37 +49,13 @@ function Freebook() {
                 <h1 className='font-semibold text-xl pb-2'> Free offered Courses</h1>
                 <p> Lorem Ipsum is simply dummy text of the printing and typesetting industry.Lorem Ipsum has been the industry's standard dummy text ver since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. </p>
             </div>
-
-        <div>
             <div className="slider-container">
                 <Slider {...settings}>
-                    <div>
-                    <h3>1</h3>
-                    </div>
-                    <div>
-                    <h3>2</h3>
-                    </div>
-                    <div>
-                    <h3>3</h3>
-                    </div>
-                    <div>
-                    <h3>4</h3>
-                    </div>
-                    <div>
-                    <h3>5</h3>
-                    </div>
-                    <div>
-                    <h3>6</h3>
-                    </div>
-                    <div>
-                    <h3>7</h3>
-                    </div>
-                    <div>
-                    <h3>8</h3>
-                    </div>
+                {filterData.map((item) => {             
+                  return <Cards item={item} key={item.id} />;
+                })}
                 </Slider>
             </div>
-        </div>
         </div>
         </>
     )
