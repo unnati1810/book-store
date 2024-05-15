@@ -1,11 +1,11 @@
 import React from 'react'
-import banner from '../../public/books.jpg'
+import banner from '../../public/books.png'
 
 function Banner() {
   return (
     <>
-      <div className="max-w-screen-2xl container mx-auto md:px-20 px-4 flex flex-col md:flex-row my-10">
-        <div className="order-2 md:order-1 w-full md:w-1/2 mt-12 md:mt-32">
+      <div className="max-w-screen-2xl container mx-auto md:px-20 px-4 flex flex-col md:flex-row my-10 ">
+        <div className="order-2 md:order-1 w-full md:w-1/2 mt-12 md:mt-32 dark:bg-slate-900 dark:text-white ">
             <div className="space-y-6">
                 <h1 className="text-4xl font-bold"> BookStore, welcomes you to learn something <span className='text-pink-500'>new  everyday !!!</span></h1>
                 <p className="font-medium text-xl"> 
@@ -20,7 +20,7 @@ function Banner() {
             </div>              
         </div>
         
-        <div className="order-1 w-full md:w-1/2">
+        <div className="order-1 w-full md:w-1/2 padding-image-homepage" >
             <img src={banner} className="w-90 h-90" alt="Books" ></img>
         </div>
       </div>

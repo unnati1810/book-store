@@ -7,7 +7,8 @@ import Footer from '../components/Footer'
 function Home() {
   return (
     <>
-         <Navbar/>
+
+        <Navbar/>
          <Banner/>
          <Freebook/>
          <Footer/>  
