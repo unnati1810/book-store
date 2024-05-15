@@ -9,12 +9,16 @@ const element=document.documentElement;
 useEffect(()=>{
     if(theme==="dark"){
         element.classList.add("dark");
+        element.classList.add("dark-background")
         localStorage.setItem("theme", "dark");
         document.body.classList.add("dark");
+        document.body.classList.add("dark-background")
     }else{
         element.classList.remove("dark");
+        element.classList.remove("dark-background");
         localStorage.setItem("theme","light");
         document.body.classList.remove("dark");
+        document.body.classList.remove("dark-background");
     }
 
 },[theme])

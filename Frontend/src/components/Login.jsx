@@ -1,4 +1,5 @@
 import React from 'react'
+import { Link } from 'react-router-dom'
 
 function Login() {
   return (
@@ -6,7 +7,7 @@ function Login() {
         <dialog id="my_modal_3" class="modal">
             <div class="modal-box">
                 <form method="dialog">
-                <button class="btn btn-sm btn-circle btn-ghost absolute right-2 top-2">✕</button>
+                <Link to="/" class="btn btn-sm btn-circle btn-ghost absolute right-2 top-2">✕</Link>
                 </form>
                 <h3 class="font-bold text-lg">Login</h3>
                 {/* Email */}
@@ -33,7 +34,9 @@ function Login() {
                     {/* Login Button */}
                     <div className='flex justify-around mt-4'>
                         <button className='bg-pink-500 text-white rounded-md px-3 py-1 hover:bg-pink-700 duration-200'>Login</button>
-                        <p>Not registered?{" "} <span className='underline text-blue-500 cursor-pointer'> SignUp</span>{" "}</p>
+                        <p>Not registered?{" "} 
+                       
+                        <span className='underline text-blue-500 cursor-pointer'><Link to="/signup"> SignUp</Link></span>{" "}</p>
                     </div>
                 </div>
             </div>

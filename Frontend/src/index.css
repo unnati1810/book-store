@@ -14,3 +14,7 @@ body{
 .padding-image-homepage{
   padding: 10%;
 }
+
+.dark-background{
+  background-color: rgb(15 23 42);
+}
