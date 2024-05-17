@@ -14,10 +14,9 @@ const {
   return (
     <div>
         <dialog id="my_modal_3" class="modal">
-            <div class="modal-box">
+            <div class="modal-box dark:bg-slate-900 dark:text-white">
                 <form  method="dialog" onSubmit={handleSubmit(onSubmit)} >
                 <a href="/" class="btn btn-sm btn-circle btn-ghost absolute right-2 top-2">✕</a>
-
                 <h3 class="font-bold text-lg">Login</h3>
                 {/* Email */}
                 <div className='mt-4 space-y-2 '>

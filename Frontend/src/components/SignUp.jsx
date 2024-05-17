@@ -16,7 +16,7 @@ function SignUp() {
     return (
         <div className='flex h-screen items-center justify-center'>
             <div class="w-[600px]">
-                <div class="modal-box">
+                <div class="modal-box dark:bg-slate-900 dark:text-white">
                     <form method="dialog" onSubmit={handleSubmit(onSubmit)}>
                         <Link to="/" class="btn btn-sm btn-circle btn-ghost absolute right-2 top-2">✕</Link>
                         <h3 class="font-bold text-lg">Sign Up</h3>
